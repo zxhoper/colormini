@@ -152,7 +152,7 @@ func eewPhr(w io.Writer, pfix string)    { _, _ = fmt.Fprintln(w, pfix+StringRep
 func NoteBlockFirst()                    { eewPFirst(os.Stdout, NotePrefix) }
 func NoteBlockLast()                     { eewPLast(os.Stdout, NotePrefix) }
 func eewPFirst(w io.Writer, pfix string) { _, _ = fmt.Fprintln(w, pfix+StringRepeat("-", 64)+"\\\\") }
-func eewPLast(w io.Writer, pfix string)  { _, _ = fmt.Fprintln(w, pfix+StringRepeat("-", 64)+"//") }
+func eewPLast(w io.Writer, pfix string)  { _, _ = fmt.Fprintln(w, pfix+StringRepeat("=", 64)+"//") }
 func StringRepeat(s string, repeatTimes int) string {
 	var sb strings.Builder
 	for i := 0; i < repeatTimes; i++ {
