@@ -78,7 +78,7 @@ func PrintAllColorTitle() {
 var NotePrefix = ""
 var clr = map[string]string{"Non": "0", "Red": "31", "Green": "32", "Yellow": "33", "Blue": "34", "Purple": "35"}
 
-func Note______________________________(a ...interface{}) { NoteColor(getCC(clr["Red"]), a...) }
+func _______________Note_______________(a ...interface{}) { NoteColor(getCC(clr["Red"]), a...) }
 func GetColorType() int                                   { return len(clr) }
 func getCC(c string) string                               { return fmt.Sprintf("\033[%sm", c) }
 func NoteColor(c string, a ...interface{}) {
