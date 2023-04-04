@@ -13,7 +13,7 @@ func Example() {
 
 	Notefn("Format line with %s appended.", "NEWLINE")
 
-	_______________NoteRed_______________("hi")
+	_______________Note_______________("hi")
 	PrintAllColorNotef()
 
 	PrintAllColor()
